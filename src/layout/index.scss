@@ -1,0 +1,15 @@
+.example {
+    clear: both;
+    padding: .5em;
+    border-left-width: .5em;
+    border-left-style: solid;
+    border-color: #E0CB52;
+    background-color: #FCFAEE;
+}
+
+.example:before {
+    content: "Example " counter(exampleno);
+    min-width: 7.5em;
+    text-transform: uppercase;
+    display: block;
+}
