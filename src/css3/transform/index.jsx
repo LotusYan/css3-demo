@@ -5,13 +5,12 @@ export default class Transform extends React.Component {
         super(props, context);
 
     }
+    
     render() {
         return (
             <div>
                 <pre>
-                    transform : translate() | rotate() | scale() | skew() | matrix()
-                </pre>
-                <pre>
+                    transform : translate() | rotate() | scale() | skew() | matrix() <br />
                     translate(x,y) : 移动 <br />
                     rotate(angle) : 旋转 <br />
                     scale(x,y) : 缩放 <br />

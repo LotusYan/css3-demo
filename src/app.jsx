@@ -2,18 +2,18 @@ import styles from './index.scss';
 import React from 'react';
 import Layout from './layout/index'
 
-import Transform from './transform/index'
-import Transition from './transition/index'
-import TransformAndTransitionExample from './transform/demo/css3-transform'
+import Transform from './css3/transform/index'
+import Transition from './css3/transition/index'
+import TransformAndTransitionExample from './css3/transform/demo/css3-transform'
 
-import Animation from './animation/index'
+import Animation from './css3/animation/index'
 
 export default class App extends React.Component {
     render() {
         return (
             <div>
                 <Layout
-                    name='transform'
+                    name='transform：对元素进行移动、缩放、转动、拉长或拉伸'
                     type='note'
                     >
                     <Transform />
@@ -26,15 +26,14 @@ export default class App extends React.Component {
                 </Layout>
 
                 <Layout
-                    name='transform 演示'
+                    name='example'
                     type='example'>
                     <TransformAndTransitionExample />
                 </Layout>
 
                 <Layout
-                    name='transform 注意'
+                    name='note'
                     type='issue'>
-
                 </Layout>
 
                 <Layout
@@ -44,8 +43,13 @@ export default class App extends React.Component {
                 </Layout>
 
                 <Layout
-                    name='transform 演示'
+                    name='example'
                     type='example'>
+                </Layout>
+
+                <Layout
+                    name='note'
+                    type='issue'>
                 </Layout>
             </div>
         )
