@@ -14,12 +14,12 @@ export default class Example extends React.Component {
             layout: true,
             example: this.props.type === 'example' ? true : false,
             note: this.props.type === 'note' ? true : false,
-            issue: this.props.type === 'issue' ? true : false
+            issue: this.props.type === 'issue' ? true : false,
+            info: this.props.type ==='info'?true:false
         });
-
         return (
             <div className={className}>
-                <p>{this.props.name}</p>
+                <p className={styles.title}>{this.props.name}</p>
                 {this.props.children}
             </div>
         );

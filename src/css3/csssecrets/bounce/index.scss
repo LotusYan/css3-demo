@@ -1,0 +1,46 @@
+@keyframes bounce {
+    60%,
+    80%,
+    to {
+        transform: translateY(400px);
+        animation-timing-function: ease;
+    }
+    70% {
+        transform: translateY(300px);
+    }
+    90% {
+        transform: translateY(360px);
+    }
+}
+
+.ball1 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding: 1.5em;
+    margin-left: 20em;
+    border-radius: 50%;
+    background: red radial-gradient(at 30% 30%, #fdd, red);
+    &:hover {
+        animation: bounce 2s forwards;
+    }
+}
+
+.ball2 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding: 1.5em;
+    margin-left: 20em;
+    border-radius: 50%;
+    background: red radial-gradient(at 30% 30%, #fdd, red);
+    &:hover {
+        animation: bounce 2s cubic-bezier(.1, .25, 1, .25) forwards;
+    }
+}
+
+.background {
+    background: linear-gradient(skyblue, white 450px, yellowgreen 0);
+    height: 500px;
+    width: 1100px;
+}

@@ -1,0 +1,40 @@
+/**
+ * Blinking
+ */
+
+@keyframes blink1 {
+    50% {
+        color: transparent
+    }
+}
+
+@keyframes blink2 {
+    to {
+        color: transparent
+    }
+}
+
+.blinkSmooth1 {
+    padding: 1em;
+    background: gold;
+    &:hover {
+        animation: blink1 1s 3;
+    }
+}
+
+.blinkSmooth2 {
+    padding: 1em;
+    background: gold;
+    &:hover {
+        animation: blink2 .5s 6;
+        animation-direction: alternate;
+    }
+}
+
+.blink {
+    padding: 1em;
+    background: gold;
+    &:hover {
+        animation: blink1 1s 3 steps(1);
+    }
+}
