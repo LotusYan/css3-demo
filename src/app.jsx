@@ -5,7 +5,7 @@ import Layout from './layout/index'
 import Transform from './css3/transform/index'
 import Transition from './css3/transition/index'
 import Animation from './css3/animation/index'
-import TransformAndTransitionExample from './css3/transform/demo/simple/index'
+// import TransformAndTransitionExample from './css3/transform/demo/simple/index'
 
 
 import Bounce from './css3/csssecrets/bounce/index'
@@ -14,6 +14,8 @@ import FrameByFrame from './css3/csssecrets/frame-by-frame/index'
 import Blink from './css3/csssecrets/blink/index'
 import Typing from './css3/csssecrets/typing/index'
 import StateAnimations from './css3/csssecrets/state-animations/index'
+import Circular2Elements from './css3/csssecrets/circular-2elements/index'
+import Circular from './css3/csssecrets/circular/index'
 
 export default class App extends React.Component {
     constructor(props, context) {
@@ -30,11 +32,11 @@ export default class App extends React.Component {
                     type: 'note',
                     content: <Transition />
                 },
-                {
-                    name: 'transform 与 transition 简单示例',
-                    type: 'example',
-                    content: <TransformAndTransitionExample />
-                },
+                // {
+                //     name: 'transform 与 transition 简单示例',
+                //     type: 'example',
+                //     content: <TransformAndTransitionExample />
+                // },
                 {
                     name: 'animation: 动画',
                     type: 'note',
@@ -60,20 +62,26 @@ export default class App extends React.Component {
                     type: 'info',
                     content: <Blink />
                 },
-                 {
+                {
                     name: 'css揭秘-打字动画',
                     type: 'info',
                     content: <Typing />
                 },
-                 {
+                {
                     name: 'css揭秘-状态平滑的动画',
                     type: 'info',
                     content: <StateAnimations />
-                 },
-                  {
+                },
+                // {
+                //     name: 'css揭秘-沿环形路径平移的动画',
+                //     type: 'info',
+                //     content: <Circular2Elements />
+                // },
+                {
                     name: 'css揭秘-沿环形路径平移的动画',
-                    type: 'info'
-                 } 
+                    type: 'info',
+                    content: <Circular />
+                }
             ]
         }
     }
